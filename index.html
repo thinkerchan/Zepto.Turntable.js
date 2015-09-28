@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta content="charset=utf-8" />
+  <meta charset="utf-8" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="author" content="chenxinkai_gz" />
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
@@ -21,7 +21,7 @@
   </style>
 </head>
 <body>
-  <div class="demo-wrap" id="Jdemo">
+  <div class="demo-wrap">
     <!-- 展示区 -->
     <ul class="show-list" id="JshowList">
       <li class="list-item">show1</li>
@@ -35,7 +35,7 @@
       <li class="list-item">show9</li>
       <li class="list-item">show10</li>
     </ul>
-    <!-- 转盘区 , circle-wrap用于定位 -->
+    <!-- 转盘区 , circle-wrap用于定位 , nav-dot数量可自行增加 , 注意 list-item和nav-dot数量相同-->
     <div  class="circle-wrap">
       <ul id="Jcircle" class="circle">
         <li class="nav-dot"><img src="http://dummyimage.com/80x80" class="pic"></li>
@@ -54,7 +54,7 @@
 </div>
 </div>
 <script src="http://js.3conline.com/wap/2013/common/js/zepto.min.js" type="text/javascript"></script>
-<script src="zepto.rolling.js?v=5"></script>
+<script src="zepto.turntable.js"></script>
 <script>
   var demo = new Turntable({
     showArea:'#JshowList',  //展示区

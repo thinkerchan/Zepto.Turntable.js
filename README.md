@@ -19,7 +19,7 @@
       <li class="list-item">show9</li>
       <li class="list-item">show10</li>
     </ul>
-    <!-- 转盘区 , circle-wrap用于定位 -->
+    <!-- 转盘区 , circle-wrap用于定位, list-item和nav-dot数量相同 -->
     <div  class="circle-wrap">
       <ul id="Jcircle" class="circle">
         <li class="nav-dot"><img src="http://dummyimage.com/80x80" class="pic"></li>
@@ -64,7 +64,8 @@ html,body{height:100%;}
 ```
 
 
-#### 0.1.0 初稿。
+#### 0.1.1 DOM读取优化,事件绑定处理优化
+#### 0.1.0 初稿
 
 
 
