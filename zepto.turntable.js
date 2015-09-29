@@ -35,8 +35,8 @@
 					'position':'absolute',
 					'top':'50%',
 					'left':'50%',
-					'-webkit-transform':'rotate('+index*_angle+'deg) translateY('+ (-_radius)+'px);',
-					'transform':'rotate('+index*_angle+'deg) translateY('+ (-_radius)+'px);'
+					'-webkit-transform':'rotate('+index*_angle+'deg) translateY('+ (-_radius)+'px) translateZ(0);',
+					'transform':'rotate('+index*_angle+'deg) translateY('+ (-_radius)+'px) translateZ(0);'
 				})
 			});
 			//默认第一个小圆加active
@@ -58,8 +58,8 @@
 				}
 			  // 每转一次
 			  $ctrlArea.css({
-			  	"-webkit-transform":"rotate("+curAngle+"deg)",
-			  	"transform":"rotate("+curAngle+"deg)"
+			  	"-webkit-transform":"rotate("+curAngle+"deg) translateZ(0);",
+			  	"transform":"rotate("+curAngle+"deg) translateZ(0);"
 			  });
 			  $dots.eq(navDotIdx-1).addClass("active").siblings().removeClass("active");
 			}
