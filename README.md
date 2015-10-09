@@ -2,8 +2,6 @@
 
 现在已经可以使用,若有bug,或者其他新功能提出,欢迎补充.
 
-###功能补充: 缺少回调函数 获取当前索引
-
 ###demo 二维码
 
 ![ada](http://r6.loli.io/2MbMre.png)
@@ -68,11 +66,15 @@ html,body{height:100%;}
     showArea:'#JshowList',  //展示区
     ctrlArea:'#Jcircle',    //转盘区
     radius: 140,            //转盘半径
-    sideLen:80              //小正方形边长
+    sideLen:80,              //小正方形边长
+    success: function(index) {  //索引
+      console.log(index)
+    }
   });
 ```
 
 
+#### v0.1.3 新增回调函数
 #### v0.1.2 解决安卓环境下UC浏览器在转盘旋转过程中渲染出错问题
 #### v0.1.1 DOM读取优化,事件绑定处理优化
 #### v0.1.0 初稿

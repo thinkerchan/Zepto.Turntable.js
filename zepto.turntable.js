@@ -1,7 +1,9 @@
 ;(function($,window,document,undefined) {
 	var Rolling = function(ele,obj){
 		this.$element = ele;
-		this.defaults = {};
+		this.defaults = {
+			//好了我就是懒 没填默认参数
+		};
 		this.args = $.extend({}, this.defaults, obj);
 	}
 	Rolling.prototype = {
@@ -12,6 +14,7 @@
 			$ctrlArea = $(_this.args.ctrlArea),
 			$counts = $ctrlArea.children().length,
 			$dots = $ctrlArea.children(),	//小圆点个数
+			_success = _this.args.success,
 			_ctrlArea = _this.args.ctrlArea, //缓存读取
 			_radius = _this.args.radius,	//大圆半径
 			_angle = 360/$counts,	//单个扇形角度
@@ -62,6 +65,7 @@
 			  	"transform":"rotate("+curAngle+"deg) translateZ(0);"
 			  });
 			  $dots.eq(navDotIdx-1).addClass("active").siblings().removeClass("active");
+			  _success(navDotIdx);
 			}
 			// 转动，这个部分需要优化
 			$(document).on("touchstart",_ctrlArea,function(e){
