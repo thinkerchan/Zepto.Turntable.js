@@ -4,6 +4,13 @@
 
 ###功能补充: 缺少回调函数 获取当前索引
 
+###demo
+
+二维码
+![转盘地址](http://r6.loli.io/2MbMre.png)
+
+地址
+[Url](http://theutopia.cn/demo/turntable/)
 ## 使用方法
 
 **HTML：**
