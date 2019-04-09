@@ -1,13 +1,5 @@
 # Zepto.Turntable.js -- Wap端转盘菜单
 
-现在已经可以使用,若有bug,或者其他新功能提出,欢迎补充.
-
-###demo 二维码
-
-![ada](http://r6.loli.io/2MbMre.png)
-
-###demo地址: [http://theutopia.cn/demo/turntable/](http://theutopia.cn/demo/turntable/)
-
 ## 使用方法
 
 **HTML：**
